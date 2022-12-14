@@ -39,6 +39,8 @@
 
 #ifdef OPTICK_ENABLED
 #include <optick.h>
+#else
+#define OPTICK_EVENT(a)
 #endif
 
 #include <new>

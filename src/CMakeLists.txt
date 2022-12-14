@@ -115,7 +115,7 @@ set_target_properties(box2d PROPERTIES
 
 if (MIMALLOC_ENABLED)
 	target_link_libraries(box2d PRIVATE OptickCore mimalloc-static)
-else()
+elseif(OPTICK_ENABLED)
 	target_link_libraries(box2d PRIVATE OptickCore)
 endif()
 
